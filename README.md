@@ -2,19 +2,19 @@
 
 Below are the list of project generators thats are avaliable to be run.
 
-1. Standard:
+1. **Standard**:
    This should includes:
 
 - an index.js
 - a spec folder
-- an index.spec.js
-- a package.json set up with the basic dependencies and scripts
+  - an index.spec.js
+- a package.json set up with the basic dependencies and scripts installed
 - a README.md file
 - an eslint config file
 - a .gitignore file
 - a git repository initialised
 
-2. Servers (Backend) using express:
+2. **Servers** (Backend) using express:
    This should includes:
 
 - an app.js
