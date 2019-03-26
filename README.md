@@ -21,10 +21,36 @@ Below are the list of project generators thats are avaliable to be run.
 - a listen.js
 - a routes folder
 - a controllers folder
-- a data folder
+- a database folder
+  - index.js
+  - config.js
+  - seed.sql
 - a models folder
 - a README.md file
-- an index.spec.js
+- spec folder
+  - app.spec.js
+  - an index.spec.js
 - an eslint config file
 - a .gitignore file
 - a package.json set up with the basic dependencies and scripts
+
+Example folder format below
+
+```
+ ├─── node_modules/
+ ├─── controllers/
+ │  └──── xx.js
+ ├─── db/
+ │  ├──── index.js <-- node-postrgres connection configuration
+ │  ├──── config.js <-- database info (port/host/database name)
+ │  └──── seed.sql
+ ├── models/
+ ├── routes/
+ │  └──── api.js
+ │  └──── xx.js
+ ├── app.js
+ ├── index.js
+ ├── .gitignore
+ ├── package-lock.json
+ └── package.json
+```
