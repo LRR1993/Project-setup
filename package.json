@@ -4,12 +4,15 @@
   "description": "",
   "main": "index.js",
   "bin": {
-    "generate": "./bin/CLI.js"
+    "create": "./bin/CLI.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "inquirer": "^6.2.2"
+  }
 }

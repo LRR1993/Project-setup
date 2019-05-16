@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-console.log('Please answers questions below to create new project');
+console.log('Create new project');
 const inquirer = require('inquirer');
 
 const questions = [
@@ -15,6 +15,12 @@ const questions = [
     message: 'Project Desciption:'
   },
   {
+    type: 'list',
+    name: 'projectType',
+    message: 'What project type:',
+    choices: ['Standard', 'Backend']
+  },
+  {
     type: 'input',
     name: 'gitHubRemote',
     message: 'GitHub Remote:'
@@ -27,6 +33,9 @@ inquirer.prompt(questions).then(answers => {
   const gitHubRemote = answers.gitHubRemote;
   const gitURL = gitHubRemote.replace(/\.git/g, '/issues');
   const gitHomepage = gitHubRemote.replace(/\.git/g, '#readme');
+  console.log(projectName, gitHubRemote, gitURL);
+  console.log(answers.projectType);
+
   module.exports = {
     projectName,
     gitHubRemote,
@@ -34,4 +43,11 @@ inquirer.prompt(questions).then(answers => {
     gitHomepage,
     projectDesc
   };
+
+  if (answers.projectType === 'Standard') {
+    const standardProject = require('../ProjectStandard');
+  }
+  if (answers.projectType === 'Backend') {
+    const backEndProject = require('../BackEnd');
+  }
 });

@@ -10,11 +10,12 @@ const files = {
   'README.md': '',
   'config.js': data.configDb,
   'seed.sql': data.seed,
-  'dBIndex.js': data.index,
+  'dBIndex.js': data.dBIndex,
   'package.json': data.packageJ,
   'app.js': data.app,
   'listen.js': data.listen,
   '.gitignore': data.git,
   'api.spec.js': data.spec,
-  'apiRouter.js': data.apiRouter
+  'apiRouter.js': data.apiRouter,
+  'modelIndex.js': data.modelIndex
 };

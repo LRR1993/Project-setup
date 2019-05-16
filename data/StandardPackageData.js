@@ -17,9 +17,9 @@ const packageJ = JSON.stringify(
     author: '',
     license: 'ISC',
     bugs: {
-      url: userInput.gitURL
+      url: project.gitURL
     },
-    homepage: userInput.gitHomepage,
+    homepage: project.gitHomepage,
     devDependencies: {
       chai: '^4.2.0',
       eslint: '^5.15.1',
